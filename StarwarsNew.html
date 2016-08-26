@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Clean - One Page Personal Portfolio</title>
+
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+    
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+    
+    <script src="assets/js/modernizr.custom.js"></script>
+       
+</head>
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+		<div class="intro">
+			<h1>Welcome to the world of Starwars</h1>
+			<h2>Lets Play!!!</h2>
+		</div>
+
+        <a href="#playersList">
+		<div class="scroll-down">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<!-- <header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Starwars Bootcamp Demo</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Click Here To Restart The Game</a></li>
+					</ul>
+				</div>
+
+			</div>container -->
+
+		<!-- </nav> -->
+
+	<!--</header> -->
+
+	<!-- Navigation end -->
+	<!-- Fight Ring Section start -->
+
+	<section id="fightRing" class="pfblock">
+		<div class="container">
+		<!-- Fight Ring Header Row -->
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title fightRingTitle">Lets Play!!!</h2>
+					</div>
+				</div>
+			</div><!-- .row Fight Ring Header Ends -->
+		<!-- Fighter List Row -->
+            <div class="row">
+              <div class="col-sm-12 col-md-8 col-md-offset-4" id="playersFighting"> 
+              </div>               	
+            </div><!-- Row -->
+         <!-- Attack Button Row -->
+			<div class="row attackBtnHolder">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="pfblock-header wow fadeInUp">
+							<button class="btn btn-danger btn-lg" id="attackBtn">Attack!!!!</button>
+					</div>
+				</div>
+			</div><!-- .row Attack Ends -->
+		 <!-- RESTART Button Row -->
+			<div class="row restartBtnHolder">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="pfblock-header wow fadeInUp">	
+						<button class="btn btn-warning btn-lg" id="restartBtn">Lets Play Again!!!!</button>
+					</div>
+				</div>
+			</div><!-- .row RESTART Ends -->        
+
+		</div><!-- .contaier -->
+
+	</section>
+
+	<!-- Fight Ring Section end -->
+
+    <!-- Player List Section start -->
+
+	<section id="playersList" class="pfblock pfblock-gray">
+		<div class="container">
+		<!-- Player List Heading Row -->
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title selectPlayers">Let the Games Begin!!<br><span class="iconbox-title">Select Your Character</span></h2>
+					</div>
+				</div>
+			</div>		
+						
+			<!-- Player List Row -->
+		<div class="row">
+			<div class="col-sm-12" id="playersListMain">
+				<!-- Player One -->
+				<div class="col-sm-3 player" data-character="" data-ap="" data-hp="" data-name="Boba Fett" id="playerOne">
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span><img src="assets/images/general-pong.png"  id="playerOneImage"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Boba Fett</h3>
+							<p id="healthScore"></p>
+						</div>
+					</div>
+				</div>
+				<!--Player Two -->
+				<div class="col-sm-3 player" data-character="" data-ap="" data-hp="" data-name="Battle Droid" id="playerTwo">
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span><img src="assets/images/yoda-new.png" id="playerTwoImage"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Battle Droid</h3>
+							<p id="healthScore"></p>
+						</div>
+					</div>
+				</div>
+				<!-- Player Three -->
+				<div class="col-sm-3 player" data-ap="" data-hp="" data-name="Ackbar" data-character="" id="playerThree">
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span><img src="assets/images/Jawas.png" id="playerThreeImage"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Ackbar</h3>
+							<p id="healthScore"></p>
+						</div>
+					</div>
+				</div>
+				<!-- Player Four -->
+				<div class="col-sm-3 player" data-character="" data-ap="" data-hp="" data-name="Luke Skywalker" id="playerFour">
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span><img src="assets/images/Dark-Sidious.png" id="playerFourImage"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Luke Skywalker</h3>
+							<p id="healthScore"></p>
+						</div>
+					</div>
+				</div>
+			</div><!-- Player List Ends -->
+		</div><!-- .row Player List Ends -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Player List Section end -->
+    
+
+
+
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="index.html#" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+                    <p class="copyright">
+                        © 2016 Manali Matkar At The Coding Boot Camp 
+					</p>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+    
+    <!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/starwars.js"></script>
+
+</body>
+</html>
