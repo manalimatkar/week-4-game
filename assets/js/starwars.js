@@ -58,8 +58,9 @@ $(document).ready(function(){
     attackPower();
 
 
+
     //Select My Character and Enemy
-    $(".player").on("click", function(){
+    $("body").on("click", ".player", function(){
 
     	// Select My Character and colour selected image green and Highlight rest as enemies in red
     	if (myCharacterChoosen == false) {
@@ -209,17 +210,24 @@ $(document).ready(function(){
 
     $("#restartBtn").on("click", function(){
 
+
+        $("h2.pfblock-title.fightRingTitle").html("");
+        $("h2.pfblock-title.fightRingTitle").hide();
+
+
         $(".attackBtnHolder").hide();
         $(".restartBtnHolder").hide();
+        $("#playersFighting").empty();
         $("#fightRing").hide();
 
-        $(".selectPlayers").html("Lets Play!!");
-        $(".selectPlayers").show();
+         $(".selectPlayers").html("Lets Play!!");
+         $(".selectPlayers").show();
        
          myHealthScore = 0;
          enemyHealthScore = 0;
          myAttackNum = 0;
          enemyAttackNum =0;
+         enemyCount = 0;
          
          myCharacterChoosen = false;
          myEnemyChoosen = false;
