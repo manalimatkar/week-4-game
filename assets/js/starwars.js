@@ -11,25 +11,35 @@ $(document).ready(function(){
 
 
      //Store the player list div html in a variable
-     var playerListDivHolder = $("#playersListMain").clone(true,true);
+     var playerListDivHolder = $("#playersListClone").clone(true,true);
 
-     console.log(playerListDivHolder);
-
+     
 	// Hide Fight Ring Row at the Start of Game
+    $("#playersListClone").hide();
     $("#fightRing").hide();
     $(".attackBtnHolder").hide();
     $(".restartBtnHolder").hide();
 
-    resetPlayerList = function(){
-       //Empty playersListMain div
-        //$("#playersListMain").empty();
-        $("#playersList").show();
-        //Append the stored html to playerlist main
-       //$(playerListDivHolder).appendTo("#playersListMain");
+    // resetPlayerList = function(){
 
-        $("#playersListMain").replaceWith(playerListDivHolder);
+    //     console.log(playerListDivHolder);
 
-    }
+    //     //$(playerListDivHolder).appendTo("#playersListMain");
+    //     $("#playersListMain").replaceWith(playerListDivHolder);
+        
+    //     //Empty playersListMain div
+    //     $("#playersFighting").empty();
+    //    // $("#playersListMain").hide();
+
+    //     console.log("Inside RESET");
+        
+    //     $("#fightRing").hide();
+       
+    //     $("#playersList").show();
+    //     //Append the stored html to playerlist main
+       
+
+    // }
 
   //Health Power generator function
     healthPower = function(){
@@ -208,35 +218,35 @@ $(document).ready(function(){
     	}    	
     })//Attack Ends
 
-    $("#restartBtn").on("click", function(){
+    // $("#restartBtn").on("click", function(){
 
 
-        $("h2.pfblock-title.fightRingTitle").html("");
-        $("h2.pfblock-title.fightRingTitle").hide();
+    //     $("h2.pfblock-title.fightRingTitle").html("");
+    //     $("h2.pfblock-title.fightRingTitle").hide();
 
 
-        $(".attackBtnHolder").hide();
-        $(".restartBtnHolder").hide();
-        $("#playersFighting").empty();
-        $("#fightRing").hide();
+    //     $(".attackBtnHolder").hide();
+    //     $(".restartBtnHolder").hide();
 
-         $(".selectPlayers").html("Lets Play!!");
-         $(".selectPlayers").show();
+
+
+    //      $(".selectPlayers").html("Lets Play!!");
+    //      $(".selectPlayers").show();
        
-         myHealthScore = 0;
-         enemyHealthScore = 0;
-         myAttackNum = 0;
-         enemyAttackNum =0;
-         enemyCount = 0;
+    //      myHealthScore = 0;
+    //      enemyHealthScore = 0;
+    //      myAttackNum = 0;
+    //      enemyAttackNum =0;
+    //      enemyCount = 0;
          
-         myCharacterChoosen = false;
-         myEnemyChoosen = false;
+    //      myCharacterChoosen = false;
+    //      myEnemyChoosen = false;
 
-         resetPlayerList();
-         healthPower();
-         attackPower();
+    //      resetPlayerList();
+    //      healthPower();
+    //      attackPower();
 
-    })//restart ends
+    // })//restart ends
 
 
 

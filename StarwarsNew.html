@@ -109,7 +109,7 @@
 			<div class="row restartBtnHolder">
 				<div class="col-sm-6 col-sm-offset-3">
 					<div class="pfblock-header wow fadeInUp">	
-						<button class="btn btn-warning btn-lg" id="restartBtn">Lets Play Again!!!!</button>
+						<button class="btn btn-warning btn-lg" id="restartBtn" onClick="window.location.reload()">Lets Play Again!!!!</button>
 					</div>
 				</div>
 			</div><!-- .row RESTART Ends -->        
@@ -136,6 +136,57 @@
 			<!-- Player List Row -->
 		<div class="row">
 			<div class="col-sm-12" id="playersListMain">
+				<!-- Player One -->
+				<div class="col-sm-3 player" data-character="" data-ap="" data-hp="" data-name="Boba Fett" id="playerOne">
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span><img src="assets/images/general-pong.png"  id="playerOneImage"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Boba Fett</h3>
+							<p id="healthScore"></p>
+						</div>
+					</div>
+				</div>
+				<!--Player Two -->
+				<div class="col-sm-3 player" data-character="" data-ap="" data-hp="" data-name="Battle Droid" id="playerTwo">
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span><img src="assets/images/yoda-new.png" id="playerTwoImage"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Battle Droid</h3>
+							<p id="healthScore"></p>
+						</div>
+					</div>
+				</div>
+				<!-- Player Three -->
+				<div class="col-sm-3 player" data-ap="" data-hp="" data-name="Ackbar" data-character="" id="playerThree">
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span><img src="assets/images/Jawas.png" id="playerThreeImage"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Ackbar</h3>
+							<p id="healthScore"></p>
+						</div>
+					</div>
+				</div>
+				<!-- Player Four -->
+				<div class="col-sm-3 player" data-character="" data-ap="" data-hp="" data-name="Luke Skywalker" id="playerFour">
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span><img src="assets/images/Dark-Sidious.png" id="playerFourImage"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Luke Skywalker</h3>
+							<p id="healthScore"></p>
+						</div>
+					</div>
+				</div>
+			</div><!-- Player List Ends -->
+
+			<div class="col-sm-12" id="playersListClone">
 				<!-- Player One -->
 				<div class="col-sm-3 player" data-character="" data-ap="" data-hp="" data-name="Boba Fett" id="playerOne">
 					<div class="iconbox wow slideInLeft">
